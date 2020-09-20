@@ -5,7 +5,7 @@ const schema = require("./schema/schema");
 const cors = require('cors')
 const mongoose = require('mongoose')
 
-mongoose.connect("mongodb+srv://wasif:abcdef123456@cluster0.nhj1h.mongodb.net/graphql?retryWrites=true&w=majority", { useNewUrlParser: true })
+mongoose.connect("mongodb+srv://wasif:<password>@cluster0.nhj1h.mongodb.net/graphql?retryWrites=true&w=majority", { useNewUrlParser: true })
 mongoose.connection.once("open", () => {
   console.log("connected to database")
 })
